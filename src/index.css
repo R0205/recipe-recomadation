@@ -1,0 +1,1444 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+
+.navbar-logo h1 {
+  font-size: 24px;
+  color: #f7f7f7;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  /* gap: 20px; */
+}
+
+/* .navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+} */
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a,
+.logout-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.navbar-links a:hover,
+.logout-button:hover {
+  background-color: #444;
+}
+
+/* .navbar-links li a:hover {
+  color: #ff9f43;
+} */
+
+/* src/components/Navbar.css */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container i {
+  font-size: 36px;
+  color: #ff9f43;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: #ff9f43;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover .logo-text,
+.logo-container:hover i {
+  transform: scale(1.1);
+  color: #ff8c00;
+}
+
+/* Styled Logout Button */
+.logout-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.logout-button i {
+  margin-right: 5px;
+}
+
+/* Adjust hover effect for the logout button */
+.logout-button:hover {
+  background-color: #444;
+}
+
+
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  /* Set position to relative for overlay */
+  height: 100vh;
+  background-image: url('./assets/HeroSection.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-section::before {
+  content: "";
+  /* Create an overlay */
+  position: absolute;
+  /* Positioning overlay */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+  z-index: 1;
+  /* Ensure overlay is on top of the background */
+}
+
+.hero-content {
+  position: relative;
+  /* Ensure text is above the overlay */
+  z-index: 2;
+  /* Bring text above the overlay */
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Add text shadow */
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Add text shadow */
+}
+
+.search-container {
+  display: flex;
+  /* Use flexbox to align input and button side by side */
+  max-width: 600px;
+  /* Limit the width of the search bar */
+  margin: 0 auto 40px;
+  /* Center the container */
+}
+
+.search-bar {
+  flex: 3;
+  /* Allow the input field to take up available space */
+  padding: 15px 20px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  /* Round left corners only */
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-button {
+  flex: 1;
+  padding: 15px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  /* Round right corners only */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 100px;
+}
+
+.search-button:hover {
+  background-color: #ff4500;
+}
+
+
+
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff9f43;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 90%;
+    /* Reduce the width for smaller screens */
+    padding: 0 10px;
+    /* Less padding on smaller screens */
+  }
+}
+
+
+.cta-button:hover {
+  background-color: #ff8c00;
+}
+
+
+/* Cards section css */
+
+/* src/components/CardsSection.css */
+
+
+
+
+/* src/components/Testimonials.css */
+
+.testimonials-section {
+  background-color: #eaeaea;
+  /* Light gray background for the section */
+  padding: 50px 20px;
+  /* Padding for spacing */
+  text-align: center;
+  /* Center align text */
+  border-radius: 10px;
+  /* Rounded corners for the section */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  /* Heading size */
+  margin-bottom: 40px;
+  /* Space below the heading */
+  color: #333;
+  /* Darker text color */
+}
+
+.testimonials-container {
+  max-width: 800px;
+  /* Limit max width of the slider */
+  margin: 0 auto;
+  /* Center the slider */
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  /* White background for each card */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  padding: 30px;
+  /* Padding for content */
+  text-align: center;
+  /* Center align text inside cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transform effect */
+  margin: 20px;
+  position: relative;
+}
+
+.testimonial-card:hover {
+
+  transform: translateY(-5px);
+  box-shadow: 0, 8px, 30px rgba(0, 0, 0, 0.3);
+  /* Slight zoom effect on hover */
+}
+
+.testimonial-image {
+  width: 100px;
+  /* Image width */
+  height: 100px;
+  /* Image height */
+  border-radius: 50%;
+  /* Circle shape */
+  margin: 0 auto 15px;
+  /* Center image and space below */
+  display: block;
+  /* Ensure the image behaves like a block element */
+  border: 3px solid #ff6347;
+  /* Border color */
+  background-color: #f9f9f9;
+  padding: 5px;
+}
+
+.testimonial-name {
+  font-size: 22px;
+  /* Font size for user names */
+  font-weight: bold;
+  /* Bold text for user names */
+  color: #333;
+  /* Dark color */
+  margin: 10px 0;
+  /* Space above and below name */
+}
+
+.testimonial-feedback {
+  font-size: 16px;
+  /* Font size for feedback */
+  color: #555;
+  /* Lighter color for feedback text */
+  line-height: 1.5;
+  /* Line height for readability */
+  font-style: italic;
+  padding: 1px solid #e0e0e0;
+  margin-top: 15px;
+}
+
+/* New styles for an alternate card background */
+
+.testimonial-feedback:hover {
+  color: #ff6347;
+  /* Change color on hover */
+}
+
+.testimonial-card:nth-child(odd) {
+  background-color: #ffffff;
+  /* White background for odd cards */
+}
+
+.testimonial-card:nth-child(even) {
+  background-color: #f0f0f0;
+  /* Slightly darker gray for even cards */
+}
+
+
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #333;
+  /* Dark background */
+  color: white;
+  /* White text */
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.footer-content {
+  max-width: 800px;
+  /* Center content */
+  margin: 0 auto;
+  /* Center horizontally */
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #ff9f43;
+  /* Color for social links */
+  margin: 0 10px;
+  /* Space between links */
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 5px;
+  /* Space between icon and text */
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+/* src/pages/About.css */
+.about-container {
+  position: relative;
+  /* Required for the overlay */
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  /* Ensure text is readable */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Center vertically */
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('../public/asset/about.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  /* Cover the entire background */
+  background-position: center;
+  /* Center the background */
+  background-repeat: no-repeat;
+  /* Prevent repeating */
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dark overlay for more contrast */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* Increased shadow for better depth */
+}
+
+.about-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ff6347;
+  /* Tomato color */
+}
+
+.about-container p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent white for readability */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  /* Align text to the left */
+  color: #333;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #333;
+  /* Ensure paragraph text is dark */
+  margin-bottom: 15px;
+  /* Add some spacing between paragraphs */
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff6347;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+  /* Darken on hover */
+}
+
+
+
+
+/* src/pages/Recipes.css */
+.recipes-page {
+  position: relative;
+  text-align: center;
+  padding: 100px 50px;
+  /* Adjust padding for spacing */
+  background: url('../public/asset/recipes.jpg') no-repeat center center/cover;
+  color: #fff;
+  /* White text over background */
+  z-index: 1;
+}
+
+.recipes-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black overlay */
+  z-index: -1;
+}
+
+.recipes-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ff6347;
+  /* Tomato color for heading */
+}
+
+.recipes-page p {
+  font-size: 22px;
+  margin-bottom: 40px;
+  color: #fff;
+  /*  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  border-radius: 5px; */
+}
+
+
+
+
+
+/* src/pages/Testimonials.css */
+.testimonials-page {
+  background-color: #f9f9f9;
+  /* Light background color for the page */
+  padding: 50px 20px;
+  /* Add padding for spacing */
+  text-align: center;
+  /* Center align text */
+}
+
+.testimonials-page h1 {
+  font-size: 48px;
+  /* Heading size */
+  margin-bottom: 30px;
+  /* Space below the heading */
+  color: #333;
+  /* Darker text color */
+}
+
+.testimonial-container {
+  display: flex;
+  /* Use flexbox for layout */
+  flex-direction: column;
+  /* Stack testimonials vertically */
+  align-items: center;
+  /* Center align items */
+  max-width: 800px;
+  /* Limit max width */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+.testimonial-card {
+  background-color: white;
+  /* White background for each testimonial card */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  padding: 20px;
+  /* Padding for content */
+  margin: 15px 0;
+  /* Space between cards */
+  width: 100%;
+  /* Full width within the container */
+}
+
+.testimonial-text {
+  font-size: 18px;
+  /* Text size for testimonial */
+  line-height: 1.6;
+  /* Line height for readability */
+  color: #555;
+  /* Text color */
+}
+
+.testimonial-author {
+  margin-top: 15px;
+  /* Space above author name */
+  font-weight: bold;
+  /* Bold author name */
+  color: #ff6347;
+  /* Highlighted color for author */
+}
+
+
+
+/* src/pages/Login.css // Regsiter */
+.auth-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s, ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus {
+  border-color: #28a745;
+  /* Change border color on focus */
+  outline: none;
+  /* Remove default outline */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  /* Shadow on focus */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Register form css */
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('../public/asset/loginPge.jpg');
+  /* Change to your desired background image */
+  background-size: cover;
+  /* Cover the entire background */
+  background-position: center;
+  /* Center the background */
+}
+
+.register-container {
+  width: 400px;
+  /* Adjust as necessary */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent white background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  /* Shadow for depth */
+  border-radius: 12px;
+  /* Rounded corners */
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  /* Darker text color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  /* Spacing between form groups */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  /* Make label text bold */
+  color: #333;
+  /* Darker color for better readability */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  /* Increased padding for comfort */
+  border-radius: 6px;
+  /* Slightly larger border-radius for a softer look */
+  border: 1px solid #ccc;
+  /* Border color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition effects */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for inputs */
+}
+
+.form-group input:focus {
+  border-color: #28a745;
+  /* Change border color on focus */
+  outline: none;
+  /* Remove default outline */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  /* Shadow on focus */
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  /* Padding for the button */
+  background-color: #28a745;
+  /* Button background color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* Remove border */
+  border-radius: 6px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth background transition */
+}
+
+.register-btn:hover {
+  background-color: #218838;
+  /* Darker green on hover */
+}
+
+
+
+/* Login page */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  background-image: url('../public/asset/loginPge.jpg');
+  /* Add your background image */
+  background-size: cover;
+  /* Cover the entire background */
+
+  /*   background-position: center; */
+  /* Center the background */
+}
+
+.auth-container {
+  width: 450px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+
+  /* Semi-transparent white background */
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  /* Custom font */
+  color: #333;
+  /* Darker text color */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+  /* Smooth border transition */
+}
+
+.login-input:focus {
+  border-color: #28a745;
+  /* Green border on focus */
+  outline: none;
+  /* Remove default outline */
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth background transition */
+}
+
+.login-button:hover {
+  background-color: #218838;
+  /* Darker green on hover */
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  /* Blue color for the link */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+
+/* sppiner container */
+
+
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  /* Stack spinner and text vertically */
+  justify-content: center;
+  align-items: center;
+  /* Center both spinner and text */
+  height: 100%;
+  /* Ensure it takes full height of its parent */
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  /* Add some space below the heading */
+}
+
+
+/* AddRecipe Form Styles */
+/* .add-recipe-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-recipe-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add-recipe-form .form-group {
+  margin-bottom: 20px;
+}
+
+.add-recipe-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.add-recipe-form input,
+.add-recipe-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.add-recipe-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.add-recipe-form input[type="file"] {
+  padding: 5px;
+}
+
+.add-recipe-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-recipe-form button:hover {
+  background-color: #218838;
+}
+
+.add-recipe-form button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.add-recipe-form p {
+  text-align: center;
+  margin-top: 10px;
+} */
+
+/* index.css */
+
+/* Add a global background image for the form page */
+.add-recipe-page {
+  background-image: url('../public/asset/AddRecipe.jpg');
+  /* Update the path */
+  background-size: cover;
+  /* Cover the entire area */
+  background-position: center;
+  /* Center the image */
+  min-height: 100vh;
+  /* Make sure it covers the viewport height */
+  display: flex;
+  justify-content: center;
+  /* Center the form horizontally */
+  align-items: center;
+  /* Center the form vertically */
+}
+
+.add-recipe-form {
+  background-color: rgba(255, 255, 255, 0.85);
+  /* White background with opacity */
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form elements styling */
+.add-recipe-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+  /* Responsive font size */
+}
+
+.add-recipe-form .form-group {
+  margin-bottom: 15px;
+}
+
+.add-recipe-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.add-recipe-form input[type="text"],
+.add-recipe-form textarea,
+.add-recipe-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.add-recipe-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  /* Responsive font size */
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-recipe-form button:disabled {
+  background-color: #ccc;
+}
+
+/* Success and error messages */
+.add-recipe-form p {
+  margin-top: 10px;
+}
+
+.add-recipe-form p.success {
+  color: green;
+}
+
+.add-recipe-form p.error {
+  color: red;
+}
+
+
+/* RecipeCard.css */
+
+/* Cards.css */s
+
+/* Main Cards Section */
+/* Main Cards Section */
+/* Main Cards Section */
+/* styles.css or index.css */
+.cards-section {
+  padding: 40px;
+  background: linear-gradient(135deg, #f0f4f8, #e0e7ff); /* Light gradient for the section background */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #4e89ff;
+  outline: none;
+}
+
+.recipe-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.recipe-card {
+  background: linear-gradient(135deg, #ff9f43, #ff6b6b); /* Vibrant gradient background */
+  border: none;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #fff; /* White text color for contrast */
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.recipe-card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #fff, #ffd54f); /* Light gradient for text */
+  -webkit-background-clip: text;
+  color: transparent; /* Gradient text effect */
+}
+
+.recipe-card p {
+  margin: 15px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* Card Description */
+.card-description {
+  font-size: 0.9rem;
+  color: #fce3c5; /* Lighter text for better contrast */
+  margin: 10px 0;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Buttons */
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Individual Card Button Styling */
+.card-button {
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #ffd54f, #ff6b6b); /* Gradient matching card */
+  border: none;
+  color: #2d2d2d; /* Darker text color for contrast */
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.card-button:hover {
+  background: linear-gradient(145deg, #ff6b6b, #ffd54f); /* Reverse gradient on hover */
+  transform: scale(1.1);
+}
+
+/* View More Button */
+.view-more {
+  background: none;
+  color: #ffd54f; /* Matching text color */
+  border: none;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 15px;
+  transition: color 0.3s;
+}
+
+.view-more:hover {
+  color: #ff9f43;
+}
+
+/* Card Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recipe-card {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* recipe details */
+
+.recipe-detail-page {
+  background-image: url('./assets/viewmore.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 20px; /* Padding around the page */
+}
+
+.recipe-detail {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+  border-radius: 12px; /* Rounded corners */
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333; /* Change text color for better visibility */
+  position: relative; /* Position relative to layer other elements */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.recipe-detail:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.recipe-detail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent overlay */
+  border-radius: 12px;
+  z-index: 1; /* Position behind the content */
+}
+
+.recipe-title {
+  font-size: 2.5rem; /* Increased font size */
+  color: #ff9f43; /* Change title color to stand out */
+  text-align: center; /* Centered title */
+  margin-bottom: 15px; /* Added margin for spacing */
+  border-bottom: 3px solid #ff9f43; /* Underline effect */
+  padding-bottom: 10px; /* Padding for the underline */
+  position: relative; /* To keep the title above the overlay */
+  z-index: 2; /* Position above the overlay */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.recipe-info {
+  margin-top: 20px;
+  background-color: transparent; /* Make background transparent */
+  border-radius: 8px;
+  padding: 15px; /* Padding inside the info box */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15); /* Slight shadow for depth */
+  position: relative; /* For stacking context */
+  z-index: 2; /* Position above the overlay */
+}
+
+.recipe-info h3 {
+  color: #ff9f43;
+  font-size: 1.8rem; /* Slightly larger font size */
+  margin-bottom: 10px; /* Spacing below the heading */
+  position: relative; /* For pseudo-element */
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.recipe-info h3::after {
+  content: '';
+  display: block;
+  width: 50px; /* Underline width */
+  height: 4px; /* Underline height */
+  background-color: #ff9f43; /* Underline color */
+  margin-top: 5px; /* Space above the underline */
+}
+
+.recipe-info p, .recipe-info ul {
+  font-size: 1.1rem; /* Slightly larger font size for better readability */
+  color: #555; /* Softer color for readability */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.recipe-info ul {
+  padding-left: 20px; /* Indent for list items */
+}
+
+.recipe-info ul li {
+  position: relative; /* For list item icon */
+  padding-left: 25px; /* Space for icon */
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.recipe-info ul li::before {
+  content: '✓'; /* Checkmark before list items */
+  position: absolute;
+  left: 0;
+  color: #ff9f43; /* Color for the checkmark */
+}
+
+@media (max-width: 768px) {
+  .recipe-title {
+      font-size: 2rem; /* Responsive font size */
+  }
+  
+  .recipe-info h3 {
+      font-size: 1.5rem; /* Responsive font size for heading */
+  }
+}
+
+
+/* modal function */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Darker semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  z-index: 1000; /* Ensure it appears above other content */
+  padding-top: 100px; /* Add padding to create space from the top */
+}
+
+/* Modal Content Style */
+.modal-content {
+  background: linear-gradient(145deg, #f5f5f5, #e0e0e0); /* Gradient background */
+  padding: 30px; /* Padding for the content */
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Adjusted maximum width for the modal */
+  overflow: hidden; /* To avoid any overflow issues */
+  margin: 0 auto; /* Center the modal horizontally */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* EditRecipe.css */
+
+/* Overlay Style */
+/* Overlay Style */
+/* Overlay Style */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Horizontally center */
+  z-index: 1000; /* Make sure it's on top */
+  padding-top: 70px; /* Add space above the modal */
+}
+
+
+/* Modal Content Style */
+/* Modal Content Style */
+.modal-content {
+  background: linear-gradient(145deg, #f5f5f5, #e0e0e0); /* Gradient background */
+  padding: 15px; /* Reduced padding to decrease height */
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3); /* Softer shadow */
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Adjusted maximum width for the modal */
+  position: relative; /* For positioning of close button */
+  overflow: hidden; /* To avoid any overflow issues */
+  margin-top: 70px; /* Space between the modal and the navbar */
+}
+
+
+/* Close Button */
+.close {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4d4d; /* Red color for close */
+  position: absolute; /* Change to absolute for better positioning */
+  top: 20px;
+  right: 20px; /* Positioning from top right */
+}
+
+/* Form Title */
+h2 {
+  color: #333; /* Dark text color for the title */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center the title */
+  font-size: 1.5rem; /* Larger font size for title */
+}
+
+/* Form Group Style */
+.form-group {
+  margin-bottom: 15px; /* Reduced space between form groups */
+}
+/* Input Fields */
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch targets */
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* More rounded corners */
+  font-size: 16px; /* Larger font size */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+/* Input Focus */
+.modal-content input,
+.modal-content textarea {
+  padding: 10px; /* Reduced padding for input fields */
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+/* Textarea Specific Style */
+.modal-content textarea {
+  min-height: 80px; /* Reduced minimum height for textarea */
+}
+
+/* Submit Button */
+.modal-content button {
+  background-color: #007BFF; /* Primary button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;  /* Increased padding */
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Consistent font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  display: block; /* Center the button */
+  margin: 0 auto; /* Centering the button */
+}
+
+/* Submit Button Hover Effect */
+.modal-content button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.modal-content button:active {
+  transform: translateY(0); /* Reset on click */
+}
+
+/* Error and Success Messages */
+.error-message {
+  color: #ff4d4d; /* Red for errors */
+  margin: 10px 0; /* Margin for spacing */
+  text-align: center; /* Center the messages */
+}
+
+.success-message {
+  color: #4CAF50; /* Green for success */
+  margin: 10px 0; /* Margin for spacing */
+  text-align: center; /* Center the messages */
+}
+
