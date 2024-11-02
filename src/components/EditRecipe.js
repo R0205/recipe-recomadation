@@ -142,7 +142,7 @@ const EditRecipe = ({ recipeId, onRecipeUpdates, initialRecipeData, closeModal }
                 throw new Error('Recipe ID is undefined');
             }
 
-            const response = await fetch(`http://localhost:8000/api/recipes/${recipeId}`, {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/recipes/${recipeId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

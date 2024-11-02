@@ -108,8 +108,7 @@ export const getRecipeById = async (id) => {
 
 import axios from "axios";
 
-const API_URL = 'http://localhost:8000/api';
-
+const API_URL = process.env.REACT_APP_API_BASE_URL;
 // Helper function for error handling
 const handleError = (error, customMessage = 'An error occurred') => {
   console.error(customMessage, error.response || error.message);

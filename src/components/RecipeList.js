@@ -38,7 +38,7 @@ const RecipeList = ({ onEditClick }) => {
     // Fetch recipes from the backend
     const fetchRecipes = async () => {
         try {
-            const response = await fetch('http://localhost:8000/api/recipes');
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/recipes`);
             const data = await response.json();
             if (data.success) {
                 setRecipes(data.data); // Assuming the data structure contains a 'data' key with recipes

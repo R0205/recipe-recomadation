@@ -141,7 +141,7 @@ const AddRecipe = ({ onRecipeAdded = () => {} }) => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8000/api/recipes', formData, {
+            const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/recipes`, formData, {
                 headers: {
                     'Content-Type': 'application/json',
                 },

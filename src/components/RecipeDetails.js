@@ -72,7 +72,7 @@ const RecipeDetail = () => {
 
     const fetchRecipe = async () => {
         try {
-            const response = await fetch(`http://localhost:8000/api/recipes/${id}`);
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/recipes/${id}`);
 
             // Check if the response is ok (status code 200)
             if (!response.ok) {
